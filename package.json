@@ -1,0 +1,23 @@
+{
+  "name": "lab16",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jest": "^19.0.2",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "sequelize-mock": "^0.7.0"
+  }
+}

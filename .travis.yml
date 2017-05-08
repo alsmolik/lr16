@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "7"
+services:
+  - mysql
+before_install:
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS Lab16;'
+deploy:
+  provider: heroku
+  api_key:
+    secure: "4992588c-96f8-491b-b18b-cfd584527def"
+  app: lr16
+notifications:
+  email:
+    recipients:
+      - smolik@dr.com
+    on_success: never
+    on_failure: always
