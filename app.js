@@ -19,8 +19,4 @@ fs.readdirSync('./modules').forEach(function (dir) {
 });
 
 db.sequelize.sync()
-    .then(() => {
-        app.listen(3000);
-    });
-
-module.exports = app;
+    .then(app.listen(3000));
